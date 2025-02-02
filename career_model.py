@@ -51,7 +51,3 @@ class CareerPathRecommender:
             print(f"An error occurred: {e}")
             return []
 
-# Example usage (uncomment to test)
-# recommender = CareerPathRecommender()
-# recommendations = recommender.get_recommendations("John Doe, software engineer with experience in Python and machine learning.")
-# print(recommendations)
