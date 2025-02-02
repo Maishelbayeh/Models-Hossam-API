@@ -20,7 +20,7 @@ if uploaded_file:
         # Parse the resume
         st.write("Parsing the resume...")
         resume_data = parse_resume(uploaded_file)
-        st.success(resume_data)
+        st.write(resume_data)
         
         # Initialize the recommender
         # recommender = CareerPathRecommender()
