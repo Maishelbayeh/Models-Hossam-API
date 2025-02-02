@@ -13,5 +13,3 @@ def parse_resume(pdf_path):
     return extracted_text
 
 # Example usage
-pdf_text = parse_resume("sample_resume.pdf")
-print(pdf_text)

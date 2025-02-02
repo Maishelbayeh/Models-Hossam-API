@@ -20,20 +20,9 @@ if uploaded_file:
         # Parse the resume
         st.write("Parsing the resume...")
         resume_data = parse_resume(uploaded_file)
-        st.write(resume_data)
-        
-        # Initialize the recommender
-        # recommender = CareerPathRecommender()
-
-    #     # Get recommendations
-    #     st.write("Generating career path recommendations...")
-    #     career_paths = recommender.get_recommendations(resume_data)
-        
-    #     if isinstance(career_paths, str):
-    #         st.success("Recommendations:")
-    #         st.write(career_paths)
-    #     else:
-    #         st.error("No recommendations available.")
+        st.write("### Extracted Resume Text:")
+        st.text(resume_data)
+    
     except Exception as e:
         st.error(f"An error occurred: {e}")
 else:
